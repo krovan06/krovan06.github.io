@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+}
+
+article {
+  background-color: aliceblue;
+}
+
+.blue-head {
+  height: 60px;
+  display: flex;
+
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #0096D5;
+}
+
+.blue-head .container {
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row-blue-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column-blue-row {
+  flex: 1;
+  padding: 0;
+  background-color: #0096D5;
+  max-width: 900px;
+}
+
+.left-blue-column {
+  max-width: 80px;
+  text-align: right;
+}
+
+.right-blue-column {
+  max-width: 1280px;
+  text-align: right;
+}
+
+.main-header {
+  width: 100vw;
+  height: 90px;
+
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header .container {
+  padding: 0px 0px 0px 0px; /* сверху спарва снизу слева*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header .desktop-header {
+  display: flex;
+}
+
+.main-header .mobile-header {
+  display: none;
+}
+
+.mobile-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-icon, .mobile-logo, .notification-icon {
+  max-width: 50px;
+  width: auto;
+  height: auto;
+}
+
+.row-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  padding: 0;
+  min-height: 35px;
+}
+
+.url-header {
+  display: flex; /* Добавляем Flexbox для равномерного распределения ссылок */
+  align-items: center;
+  gap: 20px;
+}
+
+.url-header a {
+  color: #2ca6db; /* Голубой цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 22px;
+}
+
+.url-header a:hover {
+  text-decoration: underline;
+}
+
+.img-fefu-logo {
+  max-width: 180px;
+}
+.img-fefu-user {
+  max-width: 70px;
+}
+
+.main-content {
+  /*width: 100vw;*/
+  height: calc(100vh * 0.805);
+
+  display: flex;
+  /*box-sizing: border-box;*/
+  justify-content: center;
+  padding: 20px 0px 0px 0px;
+}
+
+.main-content .container {
+  padding: 0px 0px 0px 0px; /* сверху справа снизу слева*/
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 80%;
+  display: flex;
+
+  box-sizing: border-box;
+}
+
+.row-card {
+  
+  padding: 0px 5px 0px 5px;
+  margin-bottom: 10%;
+
+  height: 80%;
+  width: 48%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-column {
+  width: 95%;
+  height: 100%;
+}
+
+.user-card {
+  margin: 20px auto; /* Центровка карточки */
+  padding: 15px; /* Отступы внутри карточки */
+  width: 400px; /* Ширина карточки */
+  background-color: #fff; /* Белый фон */
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.card-img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.wallet {
+  margin-top: 20px;
+}
+
+.row-card {
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 10px;
+  height: 100%;
+}
+
+.icon {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.accord {
+  margin-top: 20px;
+  flex-direction: column;
+  padding-left: 0%;
+  text-align: left;
+}
+
+.accord a {
+  display: block;
+  font-size: 18px;
+  color: #007BFF;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.accord a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1000px;
+  justify-content: space-between;
+  padding: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header_fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.row-footer-content {
+  padding: 10px;
+}
+
+.main-footer-text {
+  text-align: left;
+  padding-right: 40%;
+}
+
+@media (max-width: 990px) {
+  
+  .container {
+    max-width: calc(100vw * 0.95);
+  }
+
+  .row-card {
+    width: 100%;
+  }
+
+  .card-column {
+    width: 95%;
+    height: 100%;
+  }
+
+  .card-body {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .user-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-side {
+    margin: 20px 0;
+  }
+
+  .card-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .main-content {
+    padding-top: 50px;
+  }
+
+  .main-header {
+    max-height: 50px;
+  }
+
+  .main-header .desktop-header {
+    display: none;
+  }
+
+  .main-header .mobile-header {
+    display: flex;
+  }
+
+  .blue-head {
+    display: none;
+  }
+}
+
+footer {
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .card-body {
+    flex-direction: row; /* Горизонтальное отображение на больших экранах */
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    height: 1400px;
+  }
+  .row-card {
+    height: 100%;
+  }
+  .container {
+    height: 100%;
+  }
+  .card-body {
+    flex-direction: column; /* Вертикальное отображение на мобильных */;
+  }
+  .user-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
