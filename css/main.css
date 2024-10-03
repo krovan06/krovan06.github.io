@@ -6,6 +6,10 @@ article {
   background-color: aliceblue;
 }
 
+header {
+  background-color: white;
+}
+
 .blue-head {
   height: 60px;
   display: flex;
