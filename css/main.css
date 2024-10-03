@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  bacground: violet;
 }
 
 article {
@@ -22,7 +21,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  background-color: #0096D5;
+  background-color: black;
 }
 
 .blue-head .container {
