@@ -1,4 +1,4 @@
- body {
+body {
   margin: 0;
   overflow-x: hidden;
 }
@@ -138,14 +138,14 @@ header {
 }
 
 .menu-icon {
-  width: calc(var(--index) * 3);
-  height: calc(var(--index) * 3);
+  width: calc(var(--index) * 4);
+  height: calc(var(--index) * 4);
 }
 
 
 .notification-icon {
-  width: calc(var(--index) * 6.5);
-  height: calc(var(--index) * 2.7);
+  width: calc(var(--index) * 7);
+  height: calc(var(--index) * 3);
 }
 
 .row-header {
